@@ -691,9 +691,9 @@ def logout():
 if __name__ == "__main__":
 	from waitress import serve
 	serve(app, host="0.0.0.0", port=8081)
-	app.secret_key = '528491@JOKER'
+	#app.secret_key = '528491@JOKER'
 	app.debug = True
-	manager = Manager(app)
+	#manager = Manager(app)
 	#manager.secret_key = '528491@siva'
-	manager.run()
-	#app.run()
+	#manager.run()
+	app.run()
